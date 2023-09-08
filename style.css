@@ -1,0 +1,347 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#Section_hero{
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin-top: 30px;
+}
+
+#Section_about,
+#Section_project,
+#Section_skills,
+#Section_contact{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px
+}
+
+
+.bg-image{
+    width:100vw;
+    height:100vh;
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+}
+
+.bg-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    height: 60px;
+    background-color: rgb(18, 1, 51);
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left a span{
+    color: rgb(255, 37, 37);
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.right ul{
+    display: flex;
+    gap: 2rem;
+}
+
+.right ul li{
+    list-style: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.right ul li:hover{
+    color:rgb(255, 37, 37) ;
+    text-decoration: underline;
+}
+
+#Section_hero{
+    display:flex;
+    justify-content: space-around;
+}
+
+.Section_hero_left{
+   color: rgb(255, 37, 37);
+}
+#element{
+    color: rgb(24, 18, 59);
+    /* background-color: #ff0000; */
+}
+#Section_project {
+    /* background-color: #faf5f5; Background color for the projects section */
+    padding: 40px; /* Add spacing around the projects section */
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Adjust the gap between project entries */
+    justify-content: space-between;
+}
+
+.project {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25vw;
+    height: fit-content;
+    min-width: 300px; /* Adjust the minimum width of each project entry */
+    padding: 1rem;
+    min-height: 300px;
+    background-color: #e6dede; /* Background color for each project entry */
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.project p {
+    font-size: .8rem;
+    color: #333;
+    margin-bottom: 20px;
+    align-items: left;
+}
+
+.project a {
+    text-decoration: none;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.project a:hover {
+    background-color: #0056b3;
+}
+#Section_contact {
+    /* background-color: #fff; Background color for the contact section */
+    padding: 40px; /* Add spacing around the contact section */
+}
+
+.contact-details {
+    margin-top: 20px; /* Adjust the top margin for the contact details */
+}
+
+.contact-details p {
+    font-size: 18px; /* Font size for contact details */
+    margin: 10px 0; /* Add vertical spacing between details */
+}
+
+.contact-details a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #007BFF; /* Link color */
+    font-weight: bold;
+}
+
+.contact-details a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+#Section_skills {
+    /* background-color: #fff; Background color for the skills section (Do not change) */
+    padding: 40px; /* Add spacing around the skills section */
+}
+
+.skill-list {
+    /* list-style: none; Remove default list bullets */
+    font-size: 18px; /* Font size for the skill list */
+    margin: 20px 0; /* Add vertical spacing between skills */
+    padding-left: 20px; /* Indent the entire skill list */
+}
+
+.skill-list li {
+    margin-bottom: 10px; /* Add spacing between individual skills */
+    padding-left: 10px; /* Add left padding to individual skills for bullet-like icons */
+    /* position: relative; Position for pseudo-element */
+}
+
+/* .skill-list li:before { */
+    /* content: "\2022"; Bullet-like icon (Unicode character) */
+    /* position: absolute; */
+    /* left: 0; */
+    /* color: #007BFF; Bullet color */
+    /* font-size: 18px; Adjust bullet size */
+/* } */
+
+.core-subjects-list {
+    list-style: disc; /* Remove default list bullets for core subjects */
+    margin-left: 20px; /* Indent core subjects for better readability */
+}
+
+.core-subjects-list li {
+    margin-bottom: 10px; /* Add spacing between individual core subjects */
+}
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    margin-bottom: 10px;
+}
+
+.footer-contact h3,
+.footer-social h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-contact p {
+    font-size: 16px;
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    font-size: .8rem
+}
+
+.footer-social ul li {
+    margin-bottom: 5px;
+}
+
+.footer-social ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s;
+}
+
+.footer-social ul li a:hover {
+    color: #0056b3;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: .8rem;
+}
+/* Add this to your existing CSS or in a separate CSS file */
+
+#Section_about {
+    /* background-color: #f4f4f4; Background color for the about section */
+    padding: 40px; /* Add spacing around the about section */
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    border-radius: 50%; /* Round the profile image */
+    margin-right: 20px; /* Add spacing between the image and details */
+}
+
+.about-details {
+    max-width: 600px; /* Limit the width of the details */
+}
+
+.about-details h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.about-details p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    justify-content: space-around;
+    width: 70vw;
+    margin-top: 3rem;
+}
+
+.skill-sub{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1.5rem;
+    /* background-color: #333; */
+    align-items: start;
+    height:fit-content
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem
+}
+.logos img {
+    height: 3.5rem;
+}
+
+.core-subjects {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.core-subjects li {
+    list-style: circle;
+}
+
+.languages {
+    display: flex;
+    gap: 2rem
+
+}
